@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 100px;
+    text-transform: uppercase;
+    font-size: large;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: whitesmoke;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2 {
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+hr {
+    opacity: 0.25;
+    width: 30%;
+    background: whitesmoke;
+}
+
+#intro {
+    font-weight: 300;
+    font-size: 1.25em;
+    text-align: left;
+    padding: 0px 400px;
+}
+
+.content img, .content p {
+    width: 300px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    justify-items: center;
+    border: 10px solid rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#counting_coins, #chess {
+    grid-row-start: 1;
+}
+
+#chess {
+    grid-column-start: 2;
+}
+
+.fa-github, .fa-linkedin-in, .fa-envelope {
+    color: black;
+    font-size: 32px;
+    margin: 20px 40px;
+}
+
+#icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+
+    #intro {
+        font-weight: 300;
+        font-size: 1.25em;
+        text-align: left;
+        padding: 10px;
+    } 
+}
+
+@media only screen and (max-width: 600px) {
+
+}
