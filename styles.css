@@ -84,7 +84,7 @@ hr {
     grid-column-start: 2;
 }
 
-.fa-github, .fa-linkedin-in, .fa-envelope {
+.fa-github, .fa-linkedin, .fa-envelope {
     color: black;
     font-size: 32px;
     margin: 20px 40px;
