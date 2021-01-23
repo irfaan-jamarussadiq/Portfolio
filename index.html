@@ -9,39 +9,14 @@
     <link rel="icon" href="img/favicon.ico">
     <script src="https://kit.fontawesome.com/be73285246.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-        // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-            } // End if
-        });
-        });
-    </script>
+    <script src="index.js"></script>
 </head>
 
 <body>
     <h1>Irfaan Jamarussadiq</h1>
 
     <nav class="menu">
-        <ul>
+        <ul id="navbar">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li>
@@ -53,84 +28,90 @@
         </ul>
     </nav>
 
-    <section id="about-section">
-        <h2 id="about">About</h2>
-        <hr/>
-        <p id="intro">
-            Welcome! My name is Irfaan Jamarussadiq and I am a junior 
-            undergraduate student at the University of Maryland, College Park. 
-            I am majoring in computer science with a specialization in machine learning, and minoring in statistics. In my free time, I love playing chess and learning new web and machine learning technologies.
-        </p>
-    </section>
+    <div class="content">
+        <section id="about-section">
+            <h2 id="about">About</h2>
+            <hr />
+            <p id="intro">
+                Welcome! My name is Irfaan Jamarussadiq and I am a junior
+                undergraduate student at the University of Maryland, College Park.
+                I am majoring in computer science with a specialization in machine learning, and minoring in statistics.
+                In my free time, I love playing chess and learning new web and machine learning technologies.
+            </p>
+        </section>
 
-    <section id="projects-section">
-        <h2 id="projects">Projects</h2>
-        <hr/>
-        <div class="container">
-            <div class="column">
-                <div class="content">
-                    <a href="https://github.com/irfaan-jamarussadiq/react-commerce" target="_blank"><img src="img/homecraft.PNG" alt="Homecraft"></a>
-                    <h3>E-commerce website</h3>
-                    <p>
-                        This is an e-commerce website made with ReactJS for
-                        buying furniture. Users can view the current stock of
-                        items, collections, and access their account details.
-                    </p>
+        <section id="projects-section">
+            <h2 id="projects">Projects</h2>
+            <hr />
+            <div class="container">
+                <div class="column">
+                    <div class="project">
+                        <a href="https://github.com/irfaan-jamarussadiq/react-commerce" target="_blank"><img
+                                src="img/homecraft.PNG" alt="Homecraft"></a>
+                        <h3>E-commerce website</h3>
+                        <p>
+                            This is an e-commerce website made with ReactJS for
+                            buying furniture. Users can view the current stock of
+                            items, collections, and access their account details.
+                        </p>
+                    </div>
+                </div>
+                <div class="column" id="chess">
+                    <div class="project">
+                        <a href="https://github.com/irfaan-jamarussadiq/Chess" target="_blank"><img src="img/chess.png"
+                                alt="Chess"></a>
+                        <h3>Chess Program</h3>
+                        <p>
+                            This is a chess program written in Java along with a GUI
+                            made in JavaFX. The code focuses on maintaining
+                            object-oriented design.
+                        </p>
+                    </div>
+                </div>
+                <div class="column" id="counting_coins">
+                    <div class="project">
+                        <a href="https://github.com/irfaan-jamarussadiq/counting_coins_app" target="_blank"><img
+                                src="img/counting_coins.png" alt="Counting Coins"></a>
+                        <h3>Counting Coins</h3>
+                        <p>
+                            This is a Flutter mobile application written in Dart.
+                            It helps kids learn to count coins in a fun and
+                            interactive way.
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="project">
+                        <a href="https://github.com/irfaan-jamarussadiq/Maze" target="_blank"><img src="img/maze.png"
+                                alt="Maze GUI"></a>
+                        <h3>Maze GUI</h3>
+                        <p>
+                            Implemented three graph search algorithms
+                            (breadth-first, depth first, and Dijkstra's) for
+                            a maze GUI.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="column" id="chess">
-                <div class="content">
-                    <a href="https://github.com/irfaan-jamarussadiq/Chess" target="_blank"><img src="img/chess.png" alt="Chess"></a>
-                    <h3>Chess Program</h3>
-                    <p>
-                        This is a chess program written in Java along with a GUI
-                        made in JavaFX. The code focuses on maintaining 
-                        object-oriented design.
-                    </p>
-                </div>
-            </div>
-            <div class="column" id="counting_coins">
-                <div class="content">
-                    <a href="https://github.com/irfaan-jamarussadiq/counting_coins_app" target="_blank"><img src="img/counting_coins.png" alt="Counting Coins"></a>
-                    <h3>Counting Coins</h3>
-                    <p>
-                        This is a Flutter mobile application written in Dart.
-                        It helps kids learn to count coins in a fun and
-                        interactive way.
-                    </p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <a href="https://github.com/irfaan-jamarussadiq/Maze" target="_blank"><img src="img/maze.png" alt="Maze GUI"></a>
-                    <h3>Maze GUI</h3>
-                    <p>
-                        Implemented three graph search algorithms 
-                        (breadth-first, depth first, and Dijkstra's) for
-                        a maze GUI.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact-section">
-        <h2 id="contact">Contact</h2>
-        <hr/>
-        <div id="icons">
-            <a href="https://github.com/irfaan-jamarussadiq" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github"></i>
-            </a>
-    
-            <a href="https://www.linkedin.com/in/irfaanja/" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin"></i>
-            </a>
+        <section id="contact-section">
+            <h2 id="contact">Contact</h2>
+            <hr />
+            <div id="icons">
+                <a href="https://github.com/irfaan-jamarussadiq" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
 
-            <a href="mailto:irfaanj9@gmail.com">
-                <i class="fas fa-envelope"></i>
-            </a>
-        </div>
-    </section>
+                <a href="https://www.linkedin.com/in/irfaanja/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:irfaanj9@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </section>
+    </div>
 </body>
-
 </html>

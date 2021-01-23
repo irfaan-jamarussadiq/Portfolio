@@ -61,7 +61,7 @@ hr {
     padding: 0px 400px;
 }
 
-.content img, .content p {
+.project img, .project p {
     width: 300px;
 }
 
@@ -99,17 +99,15 @@ hr {
     .menu ul {
         flex-direction: column;
     }
-    
     .container {
         display: flex;
         flex-direction: column;
         border: none;
     }
-
     #intro {
         font-weight: 300;
         font-size: 1.25em;
         text-align: left;
         padding: 10px;
-    } 
+    }
 }
